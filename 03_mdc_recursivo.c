@@ -10,9 +10,7 @@ int MDC(int num1, int num2, int i)
     {
         num1 = num1 / i;
         num2 = num2 / i;
-
-        // printf("num1 = %d, num2 = %d\n", num1, num2);
-
+        
         return i * MDC(num1, num2, i);
     }
     else if (i <= num1 || i <= num2)
